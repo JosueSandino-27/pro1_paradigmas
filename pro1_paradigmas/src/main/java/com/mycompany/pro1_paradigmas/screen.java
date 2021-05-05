@@ -1,6 +1,11 @@
 package com.mycompany.pro1_paradigmas;
 
 import com.mycompany.pro1_paradigmas.controller;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -112,10 +117,9 @@ public class screen extends javax.swing.JFrame {
     }//GEN-LAST:event_click_btn_play
 
     private void click_btn_open(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_click_btn_open
-        // TODO add your handling code here:
-        
-        controller.cargarTxt();
-        
+
+       controller.cargarTxt();
+
     }//GEN-LAST:event_click_btn_open
 
     public static void main(String args[]) {

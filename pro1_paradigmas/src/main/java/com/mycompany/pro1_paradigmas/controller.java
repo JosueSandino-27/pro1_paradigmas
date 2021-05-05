@@ -16,8 +16,6 @@ import javax.swing.JFileChooser;
  */
 public class controller {
     
-    
-    
     public static void algo(String a){
         
     }
