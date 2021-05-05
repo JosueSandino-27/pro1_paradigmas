@@ -1,3 +1,5 @@
+package com.mycompany.pro1_paradigmas;
+
 
 import com.mycompany.pro1_paradigmas.controller;
 
