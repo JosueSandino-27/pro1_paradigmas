@@ -1,6 +1,6 @@
 package com.mycompany.pro1_paradigmas;
 
-import com.mycompany.pro1_paradigmas.controller;
+import com.mycompany.pro1_paradigmas.Controller;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -16,12 +16,12 @@ import java.util.logging.Logger;
  *
  * @author Josue
  */
-public class screen extends javax.swing.JFrame {
+public class View extends javax.swing.JFrame {
 
     /**
      * Creates new form screen
      */
-    public screen() {
+    public View() {
         initComponents();
     }
 
@@ -111,14 +111,14 @@ public class screen extends javax.swing.JFrame {
         // TODO add your handling code here:
         String a = in_ta.getText();
 
-        controller.algo(a);
+        Controller.algo(a);
 
         out_ta.setText(a);
     }//GEN-LAST:event_click_btn_play
 
     private void click_btn_open(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_click_btn_open
 
-       controller.cargarTxt();
+       Controller.cargarTxt();
 
     }//GEN-LAST:event_click_btn_open
 
@@ -136,20 +136,21 @@ public class screen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(screen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(screen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(screen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(screen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new screen().setVisible(true);
+                new View().setVisible(true);
             }
         });
     }

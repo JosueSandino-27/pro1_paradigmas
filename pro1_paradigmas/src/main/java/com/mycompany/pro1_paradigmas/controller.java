@@ -14,7 +14,7 @@ import javax.swing.JFileChooser;
  *
  * @author Josue
  */
-public class controller {
+public class Controller {
     
     public static void algo(String a){
         
